@@ -331,7 +331,96 @@
             </body>
             </html>
 
-                        
+            <br>
+            <p class="section-title">Choose Plan and Pay Here:</p>
+
+<!-- Dropdown code with styling -->
+<style>
+    #packageDropdown {
+        width: 200px; /* Set the width of the dropdown */
+        padding: 10px; /* Add padding for better appearance */
+        border-radius: 8px; /* Add rounded corners */
+        font-size: 16px; /* Set font size for the dropdown */
+        margin-bottom: 10px; /* Add margin for better spacing */
+    }
+
+    #packageDropdown option {
+        font-size: 18px; /* Set larger font size for the options */
+    }
+
+    #selectedText {
+        font-size: 16px; /* Set font size for the selected text */
+        margin-top: 10px; /* Add margin for better spacing */
+    }
+
+    .link {
+        display: none; /* Hide link by default */
+        margin-top: 10px;
+        font-size: 14px;
+    }
+</style>
+
+
+<!-- Dropdown with onchange event -->
+<select id="packageDropdown" onchange="displaySelectedText()">
+    <option value="none">None</option>
+    <option value="basic">Basic Package</option>
+    <option value="value">Value Package</option>
+    <option value="couple">Couple Package</option>
+    <option value="elite">Elite Package</option>
+</select>
+
+<!-- Display selected text and link -->
+<div>
+  <p id="selectedText">Selected Plan: None</p>
+  <p class="link" id="packageLink"><a href="#" onclick="handleLink()">Link</a></p>
+</div>
+
+
+<!-- JavaScript function to update selected text and link -->
+<script>
+    function displaySelectedText() {
+        var selectedOption = document.getElementById("packageDropdown").value;
+        var selectedText = "Selected Plan: " + selectedOption;
+        document.getElementById("selectedText").textContent = selectedText;
+
+        // Show/hide link based on the selected option
+        var link = document.querySelector('.link');
+        link.style.display = (selectedOption === 'none') ? 'none' : 'block';
+
+        // Optionally, you can customize the link or perform other actions based on the selected option
+        updateLinkText(selectedOption);
+    }
+
+    function updateLinkText(option) {
+        // Customize the link text based on the selected option
+        var linkText = document.getElementById("packageLink");
+        switch (option) {
+            case 'basic':
+                linkText.innerHTML = '<a href="#" onclick="handleLink(\'basic\')">Basic Package Link</a>';
+                break;
+            case 'value':
+                linkText.innerHTML = '<a href="#" onclick="handleLink(\'value\')">Value Package Link</a>';
+                break;
+            case 'couple':
+                linkText.innerHTML = '<a href="#" onclick="handleLink(\'couple\')">Couple Package Link</a>';
+                break;
+            case 'elite':
+                linkText.innerHTML = '<a href="#" onclick="handleLink(\'elite\')">Elite Package Link</a>';
+                break;
+            default:
+                linkText.innerHTML = '<a href="#" onclick="handleLink()">Link</a>';
+                break;
+        }
+    }
+
+    function handleLink() {
+        // You can customize the behavior when clicking the link based on the selected option
+        alert("Link clicked!");
+    }
+</script>
+
+                       
 
 
             <!-- Table end-->
