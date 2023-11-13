@@ -203,36 +203,41 @@
               Table and options
             -->  
             <!DOCTYPE html>
-            <html lang="en">
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Fitness Plans</title>
-                <style>
-                    table {
-                        width: 100%;
-                        border-collapse: collapse;
-                        margin-top: 20px;
-                        overflow-x: auto; /* Enable horizontal scrolling */
-                    }
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Plans</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            overflow-x: auto; /* Enable horizontal scrolling */
+        }
 
-                    th, td {
-                        border: 1px solid #ddd;
-                        padding: 8px;
-                        text-align: center;
-                    }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
 
-                    th {
-                        background-color: #f2f2f2;
-                    }
+        th {
+            background-color: #f2f2f2;
+        }
 
-                    td:first-child {
-                        font-size: 12px; /* Adjust the font size for the first column (Description) */
-                    }
+        td:first-child {
+            font-size: 12px; /* Adjust the font size for the first column (Description) */
+        }
 
-                </style>
-            </head>
-            <body>
+        @media only screen and (max-width: 640px) {
+            /* Apply styles for screens with a maximum width of 640 pixels (typical for mobile phones) */
+            table {
+                overflow-x: scroll; /* Enable horizontal scrolling on smaller screens */
+            }
+        }
+    </style>
+</head>
 
                 <h2>Fitness Plans</h2>
 
@@ -334,6 +339,7 @@
             <br>
             <p class="section-title">Choose Plan and Pay Here:</p>
 
+            <!--Table End-->
 <!-- Dropdown code with styling -->
 <style>
     #packageDropdown {
@@ -425,7 +431,7 @@ switch (option) {
                        
 
 
-            <!-- Table end-->
+            <!-- Drop Down end-->
             
             <!--
             <h3 class="about-h3">The 3-Phase Course</h3>
