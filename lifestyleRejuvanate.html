@@ -395,29 +395,31 @@
     function updateLinkText(option) {
         // Customize the link text based on the selected option
         var linkText = document.getElementById("packageLink");
-        switch (option) {
-            case 'basic':
-                linkText.innerHTML = '<a href="#" onclick="handleLink(\'basic\')">Basic Package Link</a>';
-                break;
-            case 'value':
-                linkText.innerHTML = '<a href="#" onclick="handleLink(\'value\')">Value Package Link</a>';
-                break;
-            case 'couple':
-                linkText.innerHTML = '<a href="#" onclick="handleLink(\'couple\')">Couple Package Link</a>';
-                break;
-            case 'elite':
-                linkText.innerHTML = '<a href="#" onclick="handleLink(\'elite\')">Elite Package Link</a>';
-                break;
-            default:
-                linkText.innerHTML = '<a href="#" onclick="handleLink()">Link</a>';
-                break;
-        }
+
+switch (option) {
+    case 'basic':
+        linkText.innerHTML = '<a href="upi://pay?pa=reformedfitnessmovement@okhdfcbank&pn=Reformed%20Fitness%20Movement&am=3000.00&cu=INR&aid=uGICAgMCyl7PtaQ" onclick="handleLink(\'basic\')">Basic Package Link</a>';
+        break;
+    case 'value':
+        linkText.innerHTML = '<a href="upi://pay?pa=reformedfitnessmovement@okhdfcbank&pn=Reformed%20Fitness%20Movement&am=3000.00&cu=INR&aid=uGICAgMCyl7PtaQ" onclick="handleLink(\'value\')">Value Package Link</a>';
+        break;
+    case 'couple':
+        linkText.innerHTML = '<a href="upi://pay?pa=reformedfitnessmovement@okhdfcbank&pn=Reformed%20Fitness%20Movement&am=3000.00&cu=INR&aid=uGICAgMCyl7PtaQ" onclick="handleLink(\'couple\')">Couple Package Link</a>';
+        break;
+    case 'elite':
+        linkText.innerHTML = '<a href="upi://pay?pa=reformedfitnessmovement@okhdfcbank&pn=Reformed%20Fitness%20Movement&am=3000.00&cu=INR&aid=uGICAgMCyl7PtaQ" onclick="handleLink(\'elite\')">Elite Package Link</a>';
+        break;
+    default:
+        linkText.innerHTML = '<a href="#" onclick="handleLink()">Link</a>';
+        break;
+}
+
     }
 
-    function handleLink() {
+    /*function handleLink() {
         // You can customize the behavior when clicking the link based on the selected option
         alert("Link clicked!");
-    }
+    }*/
 </script>
 
                        
