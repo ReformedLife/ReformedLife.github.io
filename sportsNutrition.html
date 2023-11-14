@@ -98,9 +98,9 @@
         style="background-image: url('./assets/images/hero-banner.jpg')">
         <div class="container">
 
-          <p class="hero-subtitle">Vedic Nutrition For Fat Loss</p>
+          <p class="hero-subtitle">Vedic Nutrition For Sports Nutrition</p>
 
-          <h1 class="h1 hero-title">Lose Fat and Rejuvenate with a Spiritual Energy.</h1>
+          <h1 class="h1 hero-title">Achive your Dream Sports Medal with Vedic Nutrtion</h1>
 
           <p class="hero-text">
             Fat loss is not about deprivation, it's about making better choices
@@ -173,7 +173,7 @@
 
             <p class="section-subtitle">Description </p>
 
-            <h2 class="h2 section-title">Enter the Vedic fatloss journey</h2>
+            <h2 class="h2 section-title">Enter the Vedic Sports journey</h2>
 
              <style>
                 /* Add margin-bottom to create space between paragraphs */
@@ -183,19 +183,16 @@
               </style> 
 
               <p class="section-text">
-                We offer 4 plans nurturing you and your family in varied situations:
+                We offer 3 plans nurturing your fitness and making you able for scoring a medal:
               </p>
               <p class="section-text">  
-                <strong>Basic Package</strong><br> For clients unable to join morning workout classes, this plan suits them the best, providing exercise charts and workout videos for self-guided workouts.
+                <strong>Strenth & Stamina 5X(SS5X)</strong><br> For clients having lean body, a lower muscle to fat ration and  seeing strength and stamina improvement.
               </p>
               <p class="section-text">    
-                <strong>Value Package</strong><br> Basic Plan + You get to attend live morning workouts guided by experts and receive all-season diet charts.
+                <strong>Get Me on Track (GMOT)</strong><br> For clients who want to onboard the marathon journey and want to discover the exilir of running marathons
               </p>
               <p class="section-text">
-                <strong>Couple Package</strong><br> Value Plan + Achieve fitness goals with your partner as it becomes easier when your partner joins the same journey.
-              </p>
-              <p class="section-text">
-                <strong>Elite Package</strong><br> Value Plan + Family-focused plan where you receive one-time diet charts and 1 consultation each for the other 3 loving family members.
+                <strong>Get Me my Dream Medal(GMDM)</strong><br> For clients who want to push themselves to outer bourdaries and seeking appropriate nutrition.<br> We at RMF have expertise in training vegeterian athletes too.
               </p>
 
 
@@ -262,16 +259,14 @@
                     <thead>
                         <tr>
                             <th>Description</th>
-                            <th>Basic</th>
-                            <th>Value</th>
-                            <th>Couple</th>
-                            <th>Elite</th>
+                            <th>SS5X</th>
+                            <th>GMOT</th>
+                            <th>GMDM</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>Diet Plan</td>
-                            <td>&#10003;</td>
                             <td>&#10003;</td>
                             <td>&#10003;</td>
                             <td>&#10003;</td>
@@ -281,16 +276,9 @@
                             <td>&#10003;</td>
                             <td>&#10003;</td>
                             <td>&#10003;</td>
-                            <td>&#10003;</td>
                         </tr>
-                        
-                        
-                        
-                       
-                        
                         <tr>
                             <td>Personalized Consultation</td>
-                            <td>&#10003;</td>
                             <td>&#10003;</td>
                             <td>&#10003;</td>
                             <td>&#10003;</td>
@@ -300,11 +288,9 @@
                             <td>&#10003;</td>
                             <td>&#10003;</td>
                             <td>&#10003;</td>
-                            <td>&#10003;</td>
                         </tr>
                         <tr>
                             <td>Destress Tools</td>
-                            <td>&#10003;</td>
                             <td>&#10003;</td>
                             <td>&#10003;</td>
                             <td>&#10003;</td>
@@ -314,11 +300,9 @@
                           <td>&#10003;</td>
                           <td>&#10003;</td>
                           <td>&#10003;</td>
-                          <td>&#10003;</td>
                       </tr>
                         <tr>
                           <td>1 Season Recipes</td>
-                          <td>&#10003;</td>
                           <td>&#10003;</td>
                           <td>&#10003;</td>
                           <td>&#10003;</td>
@@ -328,12 +312,10 @@
                           <td>&times;</td>
                           <td>&#10003;</td>
                           <td>&#10003;</td>
-                          <td>&#10003;</td>
                       </tr>
                         <tr>
                           <td>Live Workout Class</td>
                           <td>&times;</td>
-                          <td>&#10003;</td>
                           <td>&#10003;</td>
                           <td>&#10003;</td>
                       </tr>
@@ -342,20 +324,17 @@
                         <td>&times;</td>
                         <td>&times;</td>
                         <td>&times;</td>
-                        <td>&#10003;</td>
                     </tr>
                         <tr>
                           <td>Consultation</td>
                           <td>6</td>
                           <td>10</td>
                           <td>12</td>
-                          <td>14</td>
                       </tr>
                       
                         <tr>
                             <td>Duration (in months)</td>
                             <td>3</td>
-                            <td>5</td>
                             <td>5</td>
                             <td>5</td>
                         </tr>
@@ -364,7 +343,6 @@
                             <td>Price (in INR)</td>
                             <td>3000/-</td>
                             <td>4000/-</td>
-                            <td>6000/-</td>
                             <td>6000/-</td>
                         </tr>
                     </tbody>
@@ -411,10 +389,9 @@
 <!-- Dropdown with onchange event -->
 <select id="packageDropdown" onchange="displaySelectedText()">
   <option value="none">None</option>
-  <option value="basic">Basic Package</option>
-  <option value="value">Value Package</option>
-  <option value="couple">Couple Package</option>
-  <option value="elite">Elite Package</option>
+  <option value="SS5X">Strength & Stamina 5X</option>
+  <option value="GMOT">Get Me on Track</option>
+  <option value="GMDM">Get Me My Dream Medal</option>
 </select>
 
 <!-- Display selected text, link, and image -->
@@ -449,17 +426,14 @@
       // Customize the link text based on the selected option
       var linkText = document.getElementById("packageLink");
       switch (option) {
-          case 'basic':
+          case 'SS5X':
               linkText.innerHTML = '<a href="upi://pay?pa=reformedfitnessmovement@okhdfcbank&pn=Reformed%20Fitness%20Movement&am=3000.00&cu=INR&aid=uGICAgMCyl7PtaQ" onclick="handleLink(\'basic\')">Pay Here</a>';
               break;
-          case 'value':
+          case 'GMOT':
               linkText.innerHTML = '<a href="upi://pay?pa=reformedfitnessmovement@okhdfcbank&pn=Reformed%20Fitness%20Movement&am=4000.00&cu=INR&aid=uGICAgMCyl7PtaQ" onclick="handleLink(\'value\')">Pay Here</a>';
               break;
-          case 'couple':
+          case 'GMDM':
               linkText.innerHTML = '<a href="upi://pay?pa=reformedfitnessmovement@okhdfcbank&pn=Reformed%20Fitness%20Movement&am=6000.00&cu=INR&aid=uGICAgMCyl7PtaQ" onclick="handleLink(\'couple\')">Pay Here</a>';
-              break;
-          case 'elite':
-              linkText.innerHTML = '<a href="upi://pay?pa=reformedfitnessmovement@okhdfcbank&pn=Reformed%20Fitness%20Movement&am=6000.00&cu=INR&aid=uGICAgMCyl7PtaQ" onclick="handleLink(\'elite\')">Pay Here</a>';
               break;
           default:
               linkText.innerHTML = '<a href="#" onclick="handleLink()">Link</a>';
@@ -470,19 +444,15 @@
       var image = document.getElementById("displayedImage");
       var imageLink = document.getElementById("imageLink");
       switch (option) {
-          case 'basic':
+          case 'SS5X':
               image.src = './assets/images/Payment3k.jpg';
               imageLink.href = 'upi://pay?pa=reformedfitnessmovement@okhdfcbank&pn=Reformed%20Fitness%20Movement&am=3000.00&cu=INR&aid=uGICAgMCyl7PtaQ';
               break;
-          case 'value':
+          case 'GMOT':
               image.src = './assets/images/Payment4k.jpg';
               imageLink.href = 'upi://pay?pa=reformedfitnessmovement@okhdfcbank&pn=Reformed%20Fitness%20Movement&am=4000.00&cu=INR&aid=uGICAgMCyl7PtaQ';
               break;
-          case 'couple':
-              image.src = './assets/images/Payment6k.jpg';
-              imageLink.href = 'upi://pay?pa=reformedfitnessmovement@okhdfcbank&pn=Reformed%20Fitness%20Movement&am=6000.00&cu=INR&aid=uGICAgMCyl7PtaQ';
-              break;
-          case 'elite':
+          case 'GMDM':
               image.src = './assets/images/Payment6k.jpg';
               imageLink.href = 'upi://pay?pa=reformedfitnessmovement@okhdfcbank&pn=Reformed%20Fitness%20Movement&am=6000.00&cu=INR&aid=uGICAgMCyl7PtaQ';
               break;
