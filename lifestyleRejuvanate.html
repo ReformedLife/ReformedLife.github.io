@@ -166,7 +166,7 @@
             <img src="./assets/images/courses-1.jpg" width="470" height="580" loading="lazy" alt="about banner"
               class="img-cover">
 
-            <a href="upi://pay?pa=reformedfitnessmovement@okhdfcbank&pn=Reformed%20Fitness%20Movement&am=3000.00&cu=INR&aid=uGICAgMCyl7PtaQ" class="btn btn-secondary">Subscribe</a>
+            <a href="upi://pay?pa=reformedfitnessmovement@okhdfcbank&pn=Reformed%20Fitness%20Movement&am=3000.00&cu=INR&aid=uGICAgMCyl7PtaQ" class="btn btn-secondary">Ask More</a>
           </div>
 
           <div class="about-content">
@@ -230,16 +230,25 @@
             font-size: 12px; /* Adjust the font size for the first column (Description) */
         }
 
-        @media only screen and (max-width: 640px) {
+        @media only screen and (max-width: 400px) {
             /* Apply styles for screens with a maximum width of 640 pixels (typical for mobile phones) */
             table {
                 overflow-x: scroll; /* Enable horizontal scrolling on smaller screens */
+                width: 400px;
+                display:block;
             }
         }
     </style>
 </head>
 
                 <h2>Fitness Plans</h2>
+                <style>
+                  #viewNote {
+                      font-style: italic; /* Make the text italic */
+                  }
+              </style>
+              
+              <p id="viewNote">(View in Laptop or in Landscape Mode to see all plans)</p>
 
                 <table>
                     <thead>
@@ -266,41 +275,11 @@
                             <td>&#10003;</td>
                             <td>&#10003;</td>
                         </tr>
-                        <tr>
-                            <td>Live Workout Class</td>
-                            <td>&times;</td>
-                            <td>&#10003;</td>
-                            <td>&#10003;</td>
-                            <td>&#10003;</td>
-                        </tr>
-                        <tr>
-                            <td>1 Season Recipe Chart</td>
-                            <td>&#10003;</td>
-                            <td>&#10003;</td>
-                            <td>&#10003;</td>
-                            <td>&#10003;</td>
-                        </tr>
-                        <tr>
-                            <td>4 Season Recipe Chart</td>
-                            <td>&times;</td>
-                            <td>&#10003;</td>
-                            <td>&#10003;</td>
-                            <td>&#10003;</td>
-                        </tr>
-                        <tr>
-                            <td>Consultation</td>
-                            <td>6</td>
-                            <td>10</td>
-                            <td>12</td>
-                            <td>14</td>
-                        </tr>
-                        <tr>
-                            <td>Family Consultation</td>
-                            <td>&times;</td>
-                            <td>&times;</td>
-                            <td>&times;</td>
-                            <td>&#10003;</td>
-                        </tr>
+                        
+                        
+                        
+                       
+                        
                         <tr>
                             <td>Personalized Consultation</td>
                             <td>&#10003;</td>
@@ -322,6 +301,56 @@
                             <td>&#10003;</td>
                             <td>&#10003;</td>
                         </tr>
+                        <tr>
+                          <td>Dincharya Chart</td>
+                          <td>&#10003;</td>
+                          <td>&#10003;</td>
+                          <td>&#10003;</td>
+                          <td>&#10003;</td>
+                      </tr>
+                        <tr>
+                          <td>1 Ritucharya Recipes</td>
+                          <td>&#10003;</td>
+                          <td>&#10003;</td>
+                          <td>&#10003;</td>
+                          <td>&#10003;</td>
+                      </tr>
+                        <tr>
+                          <td>4 Ritucharya Recipes</td>
+                          <td>&times;</td>
+                          <td>&#10003;</td>
+                          <td>&#10003;</td>
+                          <td>&#10003;</td>
+                      </tr>
+                        <tr>
+                          <td>Live Workout Class</td>
+                          <td>&times;</td>
+                          <td>&#10003;</td>
+                          <td>&#10003;</td>
+                          <td>&#10003;</td>
+                      </tr>
+                      <tr>
+                        <td>Family Consultation</td>
+                        <td>&times;</td>
+                        <td>&times;</td>
+                        <td>&times;</td>
+                        <td>&#10003;</td>
+                    </tr>
+                        <tr>
+                          <td>Consultation</td>
+                          <td>6</td>
+                          <td>10</td>
+                          <td>12</td>
+                          <td>14</td>
+                      </tr>
+                      
+                        <tr>
+                            <td>Duration (in months)</td>
+                            <td>3</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                        </tr>
                         <!-- Additional row for Price (in INR) -->
                         <tr>
                             <td>Price (in INR)</td>
@@ -342,91 +371,120 @@
             <!--Table End-->
 <!-- Dropdown code with styling -->
 <style>
-    #packageDropdown {
-        width: 200px; /* Set the width of the dropdown */
-        padding: 10px; /* Add padding for better appearance */
-        border-radius: 8px; /* Add rounded corners */
-        font-size: 16px; /* Set font size for the dropdown */
-        margin-bottom: 10px; /* Add margin for better spacing */
-    }
+  #packageDropdown {
+      width: 200px;
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 16px;
+      margin-bottom: 10px;
+  }
 
-    #packageDropdown option {
-        font-size: 18px; /* Set larger font size for the options */
-    }
+  #packageDropdown option {
+      font-size: 18px;
+  }
 
-    #selectedText {
-        font-size: 16px; /* Set font size for the selected text */
-        margin-top: 10px; /* Add margin for better spacing */
-    }
+  #selectedText {
+      font-size: 16px;
+      margin-top: 10px;
+  }
 
-    .link {
-        display: none; /* Hide link by default */
-        margin-top: 10px;
-        font-size: 14px;
-    }
+  .link, #displayedImage {
+      display: none;
+      margin-top: 10px;
+  }
+
+  #displayedImage {
+      max-width: 400px;
+      max-height: 400px;
+      cursor: pointer; /* Add pointer cursor to indicate it's clickable */
+  }
 </style>
-
 
 <!-- Dropdown with onchange event -->
 <select id="packageDropdown" onchange="displaySelectedText()">
-    <option value="none">None</option>
-    <option value="basic">Basic Package</option>
-    <option value="value">Value Package</option>
-    <option value="couple">Couple Package</option>
-    <option value="elite">Elite Package</option>
+  <option value="none">None</option>
+  <option value="basic">Basic Package</option>
+  <option value="value">Value Package</option>
+  <option value="couple">Couple Package</option>
+  <option value="elite">Elite Package</option>
 </select>
 
-<!-- Display selected text and link -->
+<!-- Display selected text, link, and image -->
 <div>
   <p id="selectedText">Selected Plan: None</p>
-  <p class="link" id="packageLink"><a href="#" onclick="handleLink()">Link</a></p>
+  <p class="link" id="packageLink"><a href="#" onclick="handleLink()">Pay Here</a></p>
+  <a href="#" onclick="handleLink()">
+      <img id="displayedImage" src="" alt="Displayed Image">
+  </a>
 </div>
 
-
-<!-- JavaScript function to update selected text and link -->
+<!-- JavaScript function to update selected text, link, and image -->
 <script>
-    function displaySelectedText() {
-        var selectedOption = document.getElementById("packageDropdown").value;
-        var selectedText = "Selected Plan: " + selectedOption;
-        document.getElementById("selectedText").textContent = selectedText;
+  function displaySelectedText() {
+      var selectedOption = document.getElementById("packageDropdown").value;
+      var selectedText = "Selected Plan: " + selectedOption;
+      document.getElementById("selectedText").textContent = selectedText;
 
-        // Show/hide link based on the selected option
-        var link = document.querySelector('.link');
-        link.style.display = (selectedOption === 'none') ? 'none' : 'block';
+      // Show/hide link based on the selected option
+      var link = document.querySelector('.link');
+      link.style.display = (selectedOption === 'none') ? 'none' : 'block';
 
-        // Optionally, you can customize the link or perform other actions based on the selected option
-        updateLinkText(selectedOption);
-    }
+      // Show/hide image based on the selected option
+      var image = document.getElementById("displayedImage");
+      image.style.display = (selectedOption === 'none') ? 'none' : 'block';
 
-    function updateLinkText(option) {
-        // Customize the link text based on the selected option
-        var linkText = document.getElementById("packageLink");
+      // Optionally, you can customize the link or perform other actions based on the selected option
+      updateLinkAndImage(selectedOption);
+  }
 
-switch (option) {
-    case 'basic':
-        linkText.innerHTML = '<a href="upi://pay?pa=reformedfitnessmovement@okhdfcbank&pn=Reformed%20Fitness%20Movement&am=3000.00&cu=INR&aid=uGICAgMCyl7PtaQ" onclick="handleLink(\'basic\')">Basic Package Link</a>';
-        break;
-    case 'value':
-        linkText.innerHTML = '<a href="upi://pay?pa=reformedfitnessmovement@okhdfcbank&pn=Reformed%20Fitness%20Movement&am=3000.00&cu=INR&aid=uGICAgMCyl7PtaQ" onclick="handleLink(\'value\')">Value Package Link</a>';
-        break;
-    case 'couple':
-        linkText.innerHTML = '<a href="upi://pay?pa=reformedfitnessmovement@okhdfcbank&pn=Reformed%20Fitness%20Movement&am=3000.00&cu=INR&aid=uGICAgMCyl7PtaQ" onclick="handleLink(\'couple\')">Couple Package Link</a>';
-        break;
-    case 'elite':
-        linkText.innerHTML = '<a href="upi://pay?pa=reformedfitnessmovement@okhdfcbank&pn=Reformed%20Fitness%20Movement&am=3000.00&cu=INR&aid=uGICAgMCyl7PtaQ" onclick="handleLink(\'elite\')">Elite Package Link</a>';
-        break;
-    default:
-        linkText.innerHTML = '<a href="#" onclick="handleLink()">Link</a>';
-        break;
-}
+  function updateLinkAndImage(option) {
+      // Customize the link text based on the selected option
+      var linkText = document.getElementById("packageLink");
+      switch (option) {
+          case 'basic':
+              linkText.innerHTML = '<a href="upi://pay?pa=reformedfitnessmovement@okhdfcbank&pn=Reformed%20Fitness%20Movement&am=3000.00&cu=INR&aid=uGICAgMCyl7PtaQ" onclick="handleLink(\'basic\')">Pay Here</a>';
+              break;
+          case 'value':
+              linkText.innerHTML = '<a href="upi://pay?pa=reformedfitnessmovement@okhdfcbank&pn=Reformed%20Fitness%20Movement&am=4000.00&cu=INR&aid=uGICAgMCyl7PtaQ" onclick="handleLink(\'value\')">Pay Here</a>';
+              break;
+          case 'couple':
+              linkText.innerHTML = '<a href="upi://pay?pa=reformedfitnessmovement@okhdfcbank&pn=Reformed%20Fitness%20Movement&am=6000.00&cu=INR&aid=uGICAgMCyl7PtaQ" onclick="handleLink(\'couple\')">Pay Here</a>';
+              break;
+          case 'elite':
+              linkText.innerHTML = '<a href="upi://pay?pa=reformedfitnessmovement@okhdfcbank&pn=Reformed%20Fitness%20Movement&am=6000.00&cu=INR&aid=uGICAgMCyl7PtaQ" onclick="handleLink(\'elite\')">Pay Here</a>';
+              break;
+          default:
+              linkText.innerHTML = '<a href="#" onclick="handleLink()">Link</a>';
+              break;
+      }
 
-    }
+      // Set the image source based on the selected option
+      var image = document.getElementById("displayedImage");
+      switch (option) {
+          case 'basic':
+              image.src = './assets/images/Payment3k.jpg';
+              break;
+          case 'value':
+              image.src = './assets/images/Payment4k.jpg';
+              break;
+          case 'couple':
+              image.src = './assets/images/Payment6k.jpg';
+              break;
+          case 'elite':
+              image.src = './assets/images/Payment6k.jpg';
+              break;
+          default:
+              image.src = ''; // Set a default or placeholder image source
+              break;
+      }
+  }
 
-    /*function handleLink() {
-        // You can customize the behavior when clicking the link based on the selected option
-        alert("Link clicked!");
-    }*/
+  // function handleLink() {
+  //     // You can customize the behavior when clicking the link based on the selected option
+  //     alert("Link clicked!");
+  // }
 </script>
+
 
                        
 
