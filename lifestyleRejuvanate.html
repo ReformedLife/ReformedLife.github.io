@@ -396,7 +396,7 @@
   #displayedImage {
       max-width: 400px;
       max-height: 400px;
-      cursor: pointer; /* Add pointer cursor to indicate it's clickable */
+      cursor: pointer;
   }
 </style>
 
@@ -413,7 +413,7 @@
 <div>
   <p id="selectedText">Selected Plan: None</p>
   <p class="link" id="packageLink"><a href="#" onclick="handleLink()">Pay Here</a></p>
-  <a href="#" onclick="handleLink()">
+  <a id="imageLink" href="#" onclick="handleLink()">
       <img id="displayedImage" src="" alt="Displayed Image">
   </a>
 </div>
@@ -458,23 +458,29 @@
               break;
       }
 
-      // Set the image source based on the selected option
+      // Set the image source and link based on the selected option
       var image = document.getElementById("displayedImage");
+      var imageLink = document.getElementById("imageLink");
       switch (option) {
           case 'basic':
               image.src = './assets/images/Payment3k.jpg';
+              imageLink.href = 'upi://pay?pa=reformedfitnessmovement@okhdfcbank&pn=Reformed%20Fitness%20Movement&am=3000.00&cu=INR&aid=uGICAgMCyl7PtaQ';
               break;
           case 'value':
               image.src = './assets/images/Payment4k.jpg';
+              imageLink.href = 'upi://pay?pa=reformedfitnessmovement@okhdfcbank&pn=Reformed%20Fitness%20Movement&am=4000.00&cu=INR&aid=uGICAgMCyl7PtaQ';
               break;
           case 'couple':
               image.src = './assets/images/Payment6k.jpg';
+              imageLink.href = 'upi://pay?pa=reformedfitnessmovement@okhdfcbank&pn=Reformed%20Fitness%20Movement&am=6000.00&cu=INR&aid=uGICAgMCyl7PtaQ';
               break;
           case 'elite':
               image.src = './assets/images/Payment6k.jpg';
+              imageLink.href = 'upi://pay?pa=reformedfitnessmovement@okhdfcbank&pn=Reformed%20Fitness%20Movement&am=6000.00&cu=INR&aid=uGICAgMCyl7PtaQ';
               break;
           default:
               image.src = ''; // Set a default or placeholder image source
+              imageLink.href = '#';
               break;
       }
   }
