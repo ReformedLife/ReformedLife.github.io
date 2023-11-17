@@ -290,12 +290,6 @@
                             <td>&#10003;</td>
                         </tr>
                         <tr>
-                            <td>Destress Tools</td>
-                            <td>&#10003;</td>
-                            <td>&#10003;</td>
-                            <td>&#10003;</td>
-                        </tr>
-                        <tr>
                           <td>Dincharya Chart</td>
                           <td>&#10003;</td>
                           <td>&#10003;</td>
@@ -308,23 +302,11 @@
                           <td>&#10003;</td>
                       </tr>
                         <tr>
-                          <td>4 Season Recipes</td>
-                          <td>&times;</td>
-                          <td>&#10003;</td>
-                          <td>&#10003;</td>
-                      </tr>
-                        <tr>
                           <td>Live Workout Class</td>
                           <td>&times;</td>
                           <td>&#10003;</td>
                           <td>&#10003;</td>
                       </tr>
-                      <tr>
-                        <td>Family Consultation</td>
-                        <td>&times;</td>
-                        <td>&times;</td>
-                        <td>&times;</td>
-                    </tr>
                         <tr>
                           <td>Consultation</td>
                           <td>6</td>
@@ -334,16 +316,16 @@
                       
                         <tr>
                             <td>Duration (in months)</td>
+                            <td>2</td>
+                            <td>2</td>
                             <td>3</td>
-                            <td>5</td>
-                            <td>5</td>
                         </tr>
                         <!-- Additional row for Price (in INR) -->
                         <tr>
                             <td>Price (in INR)</td>
+                            <td>2000/-</td>
+                            <td>2000/-</td>
                             <td>3000/-</td>
-                            <td>4000/-</td>
-                            <td>6000/-</td>
                         </tr>
                     </tbody>
                 </table>
@@ -427,13 +409,13 @@
       var linkText = document.getElementById("packageLink");
       switch (option) {
           case 'SS5X':
-              linkText.innerHTML = '<a href="upi://pay?pa=reformedfitnessmovement@okhdfcbank&pn=Reformed%20Fitness%20Movement&am=3000.00&cu=INR&aid=uGICAgMCyl7PtaQ" onclick="handleLink(\'basic\')">Pay Here</a>';
+              linkText.innerHTML = '<a href="upi://pay?pa=reformedfitnessmovement@okhdfcbank&pn=Reformed%20Fitness%20Movement&am=2000.00&cu=INR&aid=uGICAgMCyl7PtaQ" onclick="handleLink(\'basic\')">Pay Here</a>';
               break;
           case 'GMOT':
-              linkText.innerHTML = '<a href="upi://pay?pa=reformedfitnessmovement@okhdfcbank&pn=Reformed%20Fitness%20Movement&am=4000.00&cu=INR&aid=uGICAgMCyl7PtaQ" onclick="handleLink(\'value\')">Pay Here</a>';
+              linkText.innerHTML = '<a href="upi://pay?pa=reformedfitnessmovement@okhdfcbank&pn=Reformed%20Fitness%20Movement&am=2000.00&cu=INR&aid=uGICAgMCyl7PtaQ" onclick="handleLink(\'value\')">Pay Here</a>';
               break;
           case 'GMDM':
-              linkText.innerHTML = '<a href="upi://pay?pa=reformedfitnessmovement@okhdfcbank&pn=Reformed%20Fitness%20Movement&am=6000.00&cu=INR&aid=uGICAgMCyl7PtaQ" onclick="handleLink(\'couple\')">Pay Here</a>';
+              linkText.innerHTML = '<a href="upi://pay?pa=reformedfitnessmovement@okhdfcbank&pn=Reformed%20Fitness%20Movement&am=3000.00&cu=INR&aid=uGICAgMCyl7PtaQ" onclick="handleLink(\'couple\')">Pay Here</a>';
               break;
           default:
               linkText.innerHTML = '<a href="#" onclick="handleLink()">Link</a>';
@@ -445,16 +427,16 @@
       var imageLink = document.getElementById("imageLink");
       switch (option) {
           case 'SS5X':
-              image.src = './assets/images/Payment3k.jpg';
-              imageLink.href = 'upi://pay?pa=reformedfitnessmovement@okhdfcbank&pn=Reformed%20Fitness%20Movement&am=3000.00&cu=INR&aid=uGICAgMCyl7PtaQ';
+              image.src = './assets/images/Payment2k.jpg';
+              imageLink.href = 'upi://pay?pa=reformedfitnessmovement@okhdfcbank&pn=Reformed%20Fitness%20Movement&am=2000.00&cu=INR&aid=uGICAgMCyl7PtaQ';
               break;
           case 'GMOT':
-              image.src = './assets/images/Payment4k.jpg';
-              imageLink.href = 'upi://pay?pa=reformedfitnessmovement@okhdfcbank&pn=Reformed%20Fitness%20Movement&am=4000.00&cu=INR&aid=uGICAgMCyl7PtaQ';
+              image.src = './assets/images/Payment2k.jpg';
+              imageLink.href = 'upi://pay?pa=reformedfitnessmovement@okhdfcbank&pn=Reformed%20Fitness%20Movement&am=2000.00&cu=INR&aid=uGICAgMCyl7PtaQ';
               break;
           case 'GMDM':
-              image.src = './assets/images/Payment6k.jpg';
-              imageLink.href = 'upi://pay?pa=reformedfitnessmovement@okhdfcbank&pn=Reformed%20Fitness%20Movement&am=6000.00&cu=INR&aid=uGICAgMCyl7PtaQ';
+              image.src = './assets/images/Payment3k.jpg';
+              imageLink.href = 'upi://pay?pa=reformedfitnessmovement@okhdfcbank&pn=Reformed%20Fitness%20Movement&am=3000.00&cu=INR&aid=uGICAgMCyl7PtaQ';
               break;
           default:
               image.src = ''; // Set a default or placeholder image source
