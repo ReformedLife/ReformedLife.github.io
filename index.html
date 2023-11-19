@@ -579,7 +579,76 @@
 
         </div>
       </section>
+    
+    
+      <style>
+        .testimonial-cards {
+            display: flex;
+            justify-content: space-between; /* or space-around, depending on your preference */
+        }
+        
+        .testimonial-card {
+            width: 30%; /* Adjust the width as needed */
+            height: 20%;
+            /* Additional styles for better spacing */
+            margin-bottom: 20px;
+            padding: 15px; /* Inner padding */
+            border: 1px solid #ddd; /* Border color */
+            border-radius: 8px; /* Border radius for rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle shadow effect */
+        }
+        
+        .testimonial-card img {
+            width: 100%; /* Set the width to 100% */
+            height: 300px; /* Set the desired height */
+            object-fit: cover; /* Maintain aspect ratio and cover the container */
+            border-bottom: 1px solid #ddd; /* Border at the bottom of the image */
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .testimonial-cards {
+                flex-direction: column;
+            }
+        
+            .testimonial-card {
+                width: 100%; /* Display cards in a single column on smaller screens */
+                margin-right: 0; /* Remove margin between cards in mobile view */
+            }
+        }
+        </style>
+                      
 
+<!-- Testimonials -->
+<section class="section course" aria-label="course" id="course" data-section>
+  <div class="container">
+
+      <div class="title-wrapper">
+          <p class="section-subtitle">Cured for Lifetime</p>
+          <h2 class="h2 section-title">Our Testimonials</h2>
+      </div>
+
+      <!-- Testimonial Cards -->
+      <div class="testimonial-cards">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card">
+              <img src="./assets/images/vrushali.jpg" alt="Testimonial Image 1">
+              <p class="testimonial-description"><strong>Cured from Hyperacidity and lost 4kg of Gynoid fat in 3 months</strong></p>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card">
+              <img src="./assets/images/harsha.jpg" alt="Testimonial Image 2">
+              <p class="testimonial-description"><strong>From no running history to achieving 21k marathon medal</strong></p>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card">
+              <img src="./assets/images/neha.jpg" alt="Testimonial Image 3">
+              <p class="testimonial-description"><strong>Cured from 6 month old PCOD in just 1 month</strong></p>
+          </div>
+      </div>
+  </div>
+</section>
 
 
 
