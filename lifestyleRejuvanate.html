@@ -427,12 +427,87 @@
               </table>
 
             </body>
-            </html>
+            </html><br><br>
 
-            <br>
-            <p class="section-title">Choose Plan and Pay Here:</p>
+           
 
             <!--Table End-->
+
+
+                        <!--Picture Grid-->
+
+                  <hr><br>               
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Plans</title>
+    <style>
+        /* Your existing styles for the Fitness Plans table */
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(5, auto);
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .grid-item {
+            border: none; /* Invisible border */
+            padding: 10px;
+            text-align: center;
+        }
+
+        .grid-item img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Your existing content for Fitness Plans -->
+
+    <!-- Grid with Pictures and Descriptions -->
+    <div class="grid-container">
+        <!-- First Row -->
+        <div class="grid-item">
+            <img src="./assets/images/yoga.jpg" alt="Guidance on Yoga & Meditation">
+        </div>
+        <div class="grid-item">
+            <img src="./assets/images/ayurveda.jpg" alt="Onlyl Indian Recipes, Nothing Exotic">
+        </div>
+        <div class="grid-item">
+          Guidance on Yoga & Meditation 
+        </div>
+        <div class="grid-item">
+          Only Indian Recipes, Nothing Exotic
+        </div>
+
+        <!-- Second Row -->
+        <div class="grid-item">
+            <img src="./assets/images/pillsPoweder.jpg" alt="No Artificial Supplements and Protein Powders">
+        </div>
+        <div class="grid-item">
+            <img src="./assets/images/sustainable.jpg" alt="Description 4">
+        </div>
+        <div class="grid-item">
+          NO Supplements and Protein Powders
+        </div>
+        <div class="grid-item">
+            Sustainable health after course completion
+        </div>
+
+        <!-- Repeat for the remaining rows -->
+    </div>
+</body>
+</html>
+
+
+<hr><br>
+<p class="section-title">Choose Plan and Pay Here:</p>
 <!-- Dropdown code with styling -->
 <style>
   #packageDropdown {
