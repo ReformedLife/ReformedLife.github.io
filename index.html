@@ -248,55 +248,86 @@
 
       <section class="section about" aria-label="about" id="about" data-section>
         <div class="container">
-
+      
           <div class="about-banner img-holder" style="--width: 470; --height: 580;">
             <img src="./assets/images/profile.jpg" width="470" height="580" loading="lazy" alt="about banner"
               class="img-cover">
-
+      
             <a href="https://wa.me/917019297018" class="btn btn-secondary">consult</a>
           </div>
-
+      
           <div class="about-content">
-
+      
             <p class="section-subtitle">An IITian turned Nutrition Consultant</p>
-
-            <h2 class="h2 section-title">Healing straight from written instrutions of Vedas</h2>
-
+      
+            <h2 class="h2 section-title">Healing straight from written instructions of Vedas</h2>
+      
             <style>
-                /* Add margin-bottom to create space between paragraphs */
-                .section-text {
-                  margin-bottom: 20px; /* You can adjust the value to control the space */
-                }
-            </style> 
+              /* Add margin-bottom to create space between paragraphs */
+              .section-text {
+                margin-bottom: 20px; /* You can adjust the value to control the space */
+              }
+            </style>
+      
+            <div class="about-text-container">
+              <p class="section-text">
+                Prashant is a graduate engineer from IIT Kharagpur with 7 years of working experience in the IT industry.
+                He experienced several health ups and downs while working in back-straining desk jobs, earning bread & butter for his family.
+              </p>
 
-            <p class="section-text">
-              Prashant is a graduate engineer from IIT Kharagpur with 7 years of working experience in the IT industry. He experienced several health ups and downs while working in back strainig desk jobs, earning bread & butter for his family.
-            </p>
-
-            <p class="section-text">
-              He sought health correction techniques by adopting a Western-influenced lifestyle and nutrition until one day when he realized that none of it was effective.
-            </p>
-
-            <p class="section-text">
-              With his avid reading habits, he delved into many Ayurvedic books and discovered the elixir that had been missing from our own Indian culture. He not only cured himself but also helped his mother overcome diabetes.
-            </p>
-
-            <p class="section-text">
-              Since this revelation, he has been reaching out to people and teaching them Ayurvedic Dincharya practices at most affordable prices.
-            </p>
-
-
-            <h3 class="about-h3">Numerous Healings</h3>
-
-            <p class="section-text">
-              He has helped people facing health challenges in desk jobs and other ailments like PCOD/PCOS, thyroid issues, increased body fat, diabetes, high blood pressure, and marathon training.
-            </p>
-
+              <div id="about-text-toggle" style="display: none;">
+              <p class="section-text" id="about-text-toggle-trigger">
+                He sought health correction techniques by adopting a Western-influenced lifestyle and nutrition until one day when he realized that none of it was effective.
+              </p>
+      
+                <p class="section-text">
+                  With his avid reading habits, he delved into many Ayurvedic books and discovered the elixir that had been missing from our own Indian culture.
+                  He not only cured himself but also helped his mother overcome diabetes.
+                </p>
+      
+                <p class="section-text">
+                  Since this revelation, he has been reaching out to people and teaching them Ayurvedic Dincharya practices at the most affordable prices.
+                </p>
+      
+                <h3 class="about-h3" id="about-h3" style="display: none;">Numerous Healings</h3>
+      
+                <p class="section-text" id="about-h3-text" style="display: none;">
+                  He has helped people facing health challenges in desk jobs and other ailments like PCOD/PCOS, thyroid issues, increased body fat, diabetes, high blood pressure, and marathon training.
+                </p>
+              </div>
+      
+              <button class="btn btn-primary" id="about-read-more">Read More</button>
+            </div>
+      
           </div>
-
+      
         </div>
       </section>
-
+      
+      <script>
+        const toggleReadMore = () => {
+          const hiddenText = document.getElementById('about-text-toggle');
+          const readMoreButton = document.getElementById('about-read-more');
+          const hiddenHealings = document.getElementById('about-h3');
+          const hiddenHealingsText = document.getElementById('about-h3-text');
+      
+          if (hiddenText.style.display === 'none') {
+            hiddenText.style.display = 'block';
+            hiddenHealings.style.display = 'block';
+            hiddenHealingsText.style.display = 'block';
+            readMoreButton.textContent = 'Read Less';
+          } else {
+            hiddenText.style.display = 'none';
+            hiddenHealings.style.display = 'none';
+            hiddenHealingsText.style.display = 'none';
+            readMoreButton.textContent = 'Read More';
+          }
+        };
+      
+        const readMoreButton = document.getElementById('about-read-more');
+        readMoreButton.addEventListener('click', toggleReadMore);
+      </script>
+            
 
 
 
